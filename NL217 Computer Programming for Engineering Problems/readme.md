@@ -1,7 +1,7 @@
 https://testclient-cloud.mqtt.cool/
 
 PDF บรรยาย Supply Chain 
-https://drive.google.com/file/d/1Tok7Eohre6KBjWGicYXN0hZ43WrceT9R/view?usp=sharing
+ https://drive.google.com/file/d/1Tok7Eohre6KBjWGicYXN0hZ43WrceT9R/view?usp=sharing
 
 
  
