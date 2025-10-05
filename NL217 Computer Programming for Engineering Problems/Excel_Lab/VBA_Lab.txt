@@ -1,0 +1,25 @@
+Function MyInpDate(data) 
+	If data <> ""  Then 
+		MyInpDate = Now() 
+	Else
+		MyInpDate = "" 
+	End If 
+	
+End Function
+
+Sub InputDateAndData()
+ 
+	Dim inp
+	inputAgain:
+
+	inp = InputBox("Input")
+	
+	If Len(inp) > 0 Then
+		  ActiveCell.Value = inp
+		ActiveCell.Offset(0, 1).Value = Now()
+		ActiveCell.Offset(1, 0).Select
+		
+		GoTo inputAgain
+	End If
+
+End Sub
