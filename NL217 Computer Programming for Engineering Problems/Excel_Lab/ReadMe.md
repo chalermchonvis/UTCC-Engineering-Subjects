@@ -1,8 +1,8 @@
 
-Function InpDate(data)
+Function MyInpDate(data)
 If data <> "" Then
-    InpDate = Now()
+    MyInpDate = Now()
 Else
-    InpDate = ""
+    MyInpDate = ""
 End If
 End Function
