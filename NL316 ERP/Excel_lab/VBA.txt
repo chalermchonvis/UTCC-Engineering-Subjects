@@ -1,6 +1,3 @@
-Function MyHello()
-    MyHello = "Hello"
-End Function
 
 Function MyHelloName(name)
     MyHelloName = "Hello " & name
