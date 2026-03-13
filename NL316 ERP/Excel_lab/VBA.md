@@ -1,0 +1,74 @@
+Function MyHello()
+    MyHello = "Hello"
+End Function
+
+Function MyHelloName(name)
+    MyHelloName = "Hello " & name
+End Function
+
+Function MyBarcode39(value)
+    MyBarcode39 = "* " & value & "*"
+End Function
+
+' create vba function to get search string in text and get n  string after that
+' change to get n string after search string
+Function GetCharsAfterSearch(sText As String, sSearch As String, n As Long, _
+                              Optional bCaseSensitive As Boolean = False) As String
+
+    Dim lPos        As Long
+    Dim sCompText   As String
+    Dim sCompSearch As String
+
+    ' Handle empty inputs
+    If Len(sText) = 0 Or Len(sSearch) = 0 Or n < 1 Then
+        GetCharsAfterSearch = ""
+        Exit Function
+    End If
+
+    ' Apply case sensitivity
+    If bCaseSensitive Then
+        sCompText = sText
+        sCompSearch = sSearch
+    Else
+        sCompText = LCase(sText)
+        sCompSearch = LCase(sSearch)
+    End If
+
+    ' Find position of search string
+    lPos = InStr(1, sCompText, sCompSearch)
+
+    If lPos = 0 Then
+        ' Search string not found
+        GetCharsAfterSearch = ""
+        Exit Function
+    End If
+
+    ' Return N characters after the search string
+    ' Mid handles cases where fewer than N chars remain - returns what's available
+    GetCharsAfterSearch = Mid(sText, lPos + Len(sSearch), n)
+
+End Function
+
+' create vba function to get n length of string after search string
+Public Function GetStringAfter(ByVal mainString As String, ByVal searchString As String, ByVal length As Integer) As String
+    Dim startPos As Long
+    Dim startExtract As Long
+    
+    ' Find the starting position of the search string
+    ' The search is case-insensitive (vbTextCompare)
+    startPos = InStr(1, mainString, searchString, vbTextCompare)
+    
+    ' Check if the search string was found
+    If startPos > 0 Then
+        ' Calculate the starting position for the extraction
+        ' It should start immediately after the found search string
+        startExtract = startPos + Len(searchString)
+        
+        ' Extract the substring using Mid
+        ' The Mid function takes the string, the start position, and the number of characters to return
+        GetStringAfter = Mid(mainString, startExtract, length)
+    Else
+        ' Return an empty string or handle the error as needed if the search string is not found
+        GetStringAfter = ""
+    End If
+End Function
