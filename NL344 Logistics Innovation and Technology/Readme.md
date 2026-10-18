@@ -1,8 +1,7 @@
 Install Flexsim
 
-https://www.autodesk.com/education/edu-software/overview
+- https://www.autodesk.com/education/edu-software/overview
 <img width="365" height="323" alt="image" src="https://github.com/user-attachments/assets/f842f91c-80dc-438d-b8fb-a73972e735e5" />
-
 <img width="368" height="346" alt="image" src="https://github.com/user-attachments/assets/06502790-8efb-4ec9-b0a8-b1100c8ed115" />
 
 
