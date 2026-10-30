@@ -1,8 +1,8 @@
 
 
 # Lab 1.1
-![Uploading Lab1-1.gif…]()
-
+ 
+![Alt text](images/lab1-1.gif)
 https://help.autodesk.com/view/FLEXSIMIN/2025/ENU/?guid=FlexSim_User_Manual_gettingdata_keyconceptsdata_html
 
 
