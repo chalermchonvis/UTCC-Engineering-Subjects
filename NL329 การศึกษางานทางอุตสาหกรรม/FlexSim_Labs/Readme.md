@@ -4,6 +4,9 @@
 # Lab 1.1
 ![Lab Simulation](Images/Lab1-1.gif)
 https://help.autodesk.com/view/FLEXSIMIN/2025/ENU/?guid=FlexSim_User_Manual_gettingdata_keyconceptsdata_html
+<img width="426" height="514" alt="image" src="https://github.com/user-attachments/assets/6dd95ec5-357a-4be1-afa5-8851ec3b2264" />
+
+
 --------- 
 
 
